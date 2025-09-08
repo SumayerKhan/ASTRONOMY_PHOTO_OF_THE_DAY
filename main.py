@@ -25,3 +25,7 @@ if data['media_type'] == 'image':
     st.image(image=img_url,caption=data['title'])
 else:
     st.video(data=img_url)
+
+# Description
+st.markdown("### Description")
+st.write(data['explanation'])
