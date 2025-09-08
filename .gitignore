@@ -1,3 +1,10 @@
-apod.jpg
+# virtual environments
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment files
 .env
-image.jpg
