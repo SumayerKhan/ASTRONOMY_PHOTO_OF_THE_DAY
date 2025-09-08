@@ -18,4 +18,10 @@ st.title("Astronomy photo of the day!")
 st.header(data['title'])
 st.write(data['date'])
 
+#PHOTO FETCH
+img_url = data['url']
 
+if data['media_type'] == 'image':
+    st.image(image=img_url,caption=data['title'])
+else:
+    st.video(data=img_url)
